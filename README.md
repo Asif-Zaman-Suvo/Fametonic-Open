@@ -58,7 +58,7 @@ components/
 - **Next.js 15**: React framework with App Router
 - **TypeScript**: Type-safe development
 - **Tailwind CSS**: Utility-first CSS framework
-- **Custom Styling**: Inline styles for precise design control
+- **Custom Styling**: Custom styles for precise design control
 
 ### Design System:
 - **Color Palette**:

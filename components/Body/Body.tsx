@@ -15,13 +15,7 @@ const Body = () => {
             </h1>
 
             {/* Sub-headline with gradient */}
-            <p
-              style={{
-                color: "rgba(0, 231, 249, 1)",
-                textShadow: "0px 4px 4px rgba(252, 0, 78, 1)",
-              }}
-              className="text-white text-3xl lg:text-4xl font-bold"
-            >
+            <p className="text-white text-3xl lg:text-4xl font-bold sub-headline">
               Discover your way to success with Fametonic:
             </p>
 
@@ -65,13 +59,7 @@ const Body = () => {
 
             {/* CTA Button */}
             <div className="space-y-3">
-              <button
-                style={{
-                  backgroundColor: "rgba(252, 0, 78, 1)",
-                  boxShadow: "2px 2px 10px rgba(0, 231, 249, 1)",
-                }}
-                className="text-white font-bold py-2 px-32 rounded-lg text-lg transition-colors duration-200"
-              >
+              <button className="text-white font-bold py-2 px-32 rounded-lg text-lg transition-colors duration-200 cta-button">
                 GET STARTED &gt;
               </button>
               <p className="text-white text-sm pl-18">
