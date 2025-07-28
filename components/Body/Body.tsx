@@ -6,11 +6,12 @@ const Body = () => {
   return (
     <div className="bg-black min-h-screen">
       <div className="container mx-auto px-6 py-3">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-row gap-12 items-center">
           {/* Left Side Content */}
-          <div className="space-y-8">
-            {/* Main Headline */}
-            <h1 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
+          <div className="">
+           <div className="">
+             {/* Main Headline */}
+             <h1 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
               Want to Turn Social Media Into a Profitable Career?
             </h1>
 
@@ -18,9 +19,10 @@ const Body = () => {
             <p className="text-white text-3xl lg:text-4xl font-bold sub-headline">
               Discover your way to success with Fametonic:
             </p>
+           </div>
 
             {/* Benefits List */}
-            <div className="space-y-4">
+            <div className="">
               <div className="flex items-start space-x-3">
                 <span className="text-yellow-400 text-lg">
                   <StarIcon />
@@ -58,7 +60,7 @@ const Body = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="space-y-3">
+            <div className="">
               <button className="text-white font-bold py-2 px-32 rounded-lg text-lg transition-colors duration-200 cta-button">
                 GET STARTED &gt;
               </button>
@@ -68,7 +70,7 @@ const Body = () => {
             </div>
 
             {/* Legal Text */}
-            <div className="space-y-2 text-xs text-gray-400">
+            <div className=" text-xs text-gray-400">
               <p>
                 By clicking &quot;Get Started&quot;, you agree with Terms and
                 Conditions, Privacy Policy, Subscription Terms
