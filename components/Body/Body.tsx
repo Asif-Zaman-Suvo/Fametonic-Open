@@ -72,22 +72,34 @@ const Body = () => {
             </div>
 
             {/* Legal Text - Above button on mobile, below on desktop */}
-            <div className="space-y-2 text-xs text-gray-400 text-center lg:text-left order-1 lg:order-3">
+            <div className="space-y-2 text-xs text-gray-400 text-center lg:text-left order-1 lg:order-3 lg:hidden">
               <p>
                 By clicking &quot;Get Started&quot;, you agree with Terms and
                 Conditions, Privacy Policy, Subscription Terms
               </p>
+               {/* Copyright - Only show on mobile */}
+            <div className="space-y-2 text-xs text-gray-400 text-center lg:hidden order-4">
               <p>Fametonic 2025 ©All Rights Reserved.</p>
+            </div>
             </div>
 
             {/* CTA Button */}
-            <div className="space-y-3 text-center lg:text-left order-2 lg:order-2">
+            <div className="space-y-3 text-center lg:text-left order-2 lg:order-1">
               <button className="text-white font-bold py-3 lg:py-2 px-8 lg:px-32 rounded-lg text-base lg:text-lg transition-colors duration-200 cta-button w-full lg:w-auto">
                 GET STARTED &gt;
               </button>
-              <p className="text-white text-xs lg:text-sm">
+              <p className="text-white text-xs sm:pl-0 lg:text-sm lg:pl-16">
                 1-minute quiz for personalized Insights
               </p>
+            </div>
+
+            {/* Desktop Legal Text - Below quiz text */}
+            <div className="space-y-2 text-xs text-gray-400 text-center lg:text-left order-3 lg:order-2">
+              <p className="hidden lg:block">
+                By clicking &quot;Get Started&quot;, you agree with Terms and
+                Conditions, Privacy Policy, Subscription Terms
+              </p>
+              <p className="hidden lg:block">Fametonic 2025 ©All Rights Reserved.</p>
             </div>
           </div>
         </div>

@@ -59,31 +59,33 @@ const Menu = () => {
                 <div className="md:hidden">
                     <button
                         onClick={toggleMenu}
-                        className="text-white p-2 focus:outline-none z-50"
+                        className="text-white p-2 focus:outline-none z-50 hover:bg-gray-800 rounded-lg transition-all duration-300"
                         aria-label="Toggle menu"
                     >
                         <div className="w-6 h-6 flex flex-col justify-center items-center">
-                            <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1' : ''}`}></span>
-                            <span className={`block w-5 h-0.5 bg-white mt-1 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-                            <span className={`block w-5 h-0.5 bg-white mt-1 transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1' : ''}`}></span>
+                            <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ease-in-out ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+                            <span className={`block w-5 h-0.5 bg-white mt-1 transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-0 scale-0' : ''}`}></span>
+                            <span className={`block w-5 h-0.5 bg-white mt-1 transition-all duration-300 ease-in-out ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
                         </div>
                     </button>
                 </div>
             </div>
 
-            {/* Mobile Menu Overlay */}
-            {isMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-black border-t border-gray-800 z-40 shadow-lg">
-                    <div className="flex flex-col space-y-0 p-0">
-                        <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200 py-4 px-6 border-b border-gray-700">
-                            About us
-                        </a>
-                        <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200 py-4 px-6">
-                            Contact
-                        </a>
-                    </div>
+            {/* Mobile Menu Overlay with Animation */}
+            <div className={`md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-sm border-t border-gray-800 z-40 transition-all duration-500 ease-in-out ${
+                isMenuOpen 
+                    ? 'opacity-100 translate-y-0 shadow-2xl' 
+                    : 'opacity-0 -translate-y-4 pointer-events-none'
+            }`}>
+                <div className="flex flex-col space-y-0 p-0">
+                    <a href="#" className="text-white hover:text-gray-300 transition-all duration-300 py-4 px-6 border-b border-gray-700 hover:bg-gray-800 transform hover:translate-x-2">
+                        About us
+                    </a>
+                    <a href="#" className="text-white hover:text-gray-300 transition-all duration-300 py-4 px-6 hover:bg-gray-800 transform hover:translate-x-2">
+                        Contact
+                    </a>
                 </div>
-            )}
+            </div>
         </div>
     );
 };
