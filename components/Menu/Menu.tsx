@@ -35,8 +35,15 @@ const Menu = () => {
     return (
         <div ref={menuRef} className="w-full bg-black py-4 px-6 lg:px-22 relative">
             <div className="flex items-center justify-between">
-                {/* Logo */}
-                <Logo />
+                {/* Desktop Logo - Left side */}
+                <div className="hidden md:block">
+                    <Logo />
+                </div>
+                
+                {/* Mobile Logo - Centered */}
+                <div className="md:hidden flex-1 flex justify-center">
+                    <Logo />
+                </div>
                 
                 {/* Desktop Navigation Links */}
                 <div className="hidden md:flex items-center space-x-8">
