@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import { StarIcon } from "../StarIcon/StartIcon";
+import Menu from "../Menu/Menu";
 
 const Body = () => {
   return (
     <div className="bg-black min-h-screen">
-      <div className="container mx-auto px-4 lg:px-6 py-6 lg:py-10">
+      <div className="container mx-auto px-4 lg:px-22 py-6 lg:py-10">
+        <Menu />
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
           {/* Mobile Image - Top on mobile, right side on desktop */}
           <div className="flex justify-center lg:justify-end w-full lg:w-auto order-1 lg:order-2">

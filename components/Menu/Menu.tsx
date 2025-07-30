@@ -33,7 +33,7 @@ const Menu = () => {
     }, [isMenuOpen]);
 
     return (
-        <div ref={menuRef} className="w-full bg-black py-4 px-6 lg:px-22 relative">
+        <div ref={menuRef} className="w-full bg-black pb-15 relative">
             <div className="flex items-center justify-between">
                 {/* Desktop Logo - Left side */}
                 <div className="hidden md:block">
